@@ -1,0 +1,72 @@
+.wid-img {
+    width: 100%;
+    height: 100%;
+}
+#btnSave {
+    position: relative;
+    z-index: 1;
+}
+.name-tour {
+    font-size: 2vw;
+    color: white;
+}
+.table-container {
+    padding: 2vw;
+    width: 90%;
+    display: flex;
+    gap: 1vh;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.01);
+    backdrop-filter: blur(5px);
+    border: 3px solid rgb(255, 0, 0);
+    border-radius: 1vw;
+}
+.table-part {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+.info-text {
+    font-size: 1vw;
+    line-height: 2;
+}
+.div-fix {
+    display: flex;
+    margin-right: 5vw;
+    gap: 1.5vw;
+}
+.info-table-container {
+    display: flex;
+    gap: 2vw;
+}
+.inf-bor {
+    border-bottom: 3px solid red;
+}
+.teams-result {
+    display: flex;
+}
+.w1 {
+    width: 2vw;
+    text-align: center;
+}
+.w2 {
+    width: 7vw;
+}
+.w3 {
+    width: 3vw;
+    text-align: center;
+}
+.w4 {
+    width: 2vw;
+    text-align: center;
+}
+.w5 {
+    width: 2vw;
+    text-align: center;
+}
+.w6 {
+    width: 4vw;
+    text-align: center;
+}

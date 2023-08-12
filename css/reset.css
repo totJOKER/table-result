@@ -1,0 +1,39 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
+}
+h1 {
+    font-family: Arial;
+}
+.widget {
+    width: 80vw;
+    height: 45vw;
+    display: inline-block;
+    background-color: white;
+    font-size: 14px !important;
+    line-height: 20px !important;
+    background-image: url(../images/Frame27.png);
+    background-size: 100% 100%;
+    vertical-align: top;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+ 
+    gap: 2vh;
+    
+
+
+
+
+
+
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+</head>
+<body>
+    <span id="widget" class="widget" field="AGE" roundby="20" description="Patient age, in years">
+        <h1 class="name-tour">NAME TOURNAMENT S1</h1>
+        <div class="table-container">
+            <div class="table-part">
+                <div class="info-table-container inf-bor">
+                    <div class="div-fix">
+                        <h1 class="info-text w1">№</h1>
+                        <h1 class="info-text w2">TEAM NAME</h1>
+                    </div>
+                    <h1 class="info-text w3">WWCD</h1>
+                    <h1 class="info-text w4">PP</h1>
+                    <h1 class="info-text w5">PP</h1>
+                    <h1 class="info-text w6">TOTAL</h1>
+                </div>
+                <div class="info-table-container">
+                    <div class="div-fix">
+                        <h1 class="info-text w1">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br></h1>
+                        <h1 class="info-text w2">TEAM NAME<br>TEAM NAME<br>TEAM NAME<br>TEAM NAME<br>TEAM NAME<br>TEAM NAME<br>TEAM NAME<br>TEAM NAME<br></h1>
+                    </div>
+                    <h1 class="info-text w3">0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br></h1>
+                    <h1 class="info-text w4">0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br></h1>
+                    <h1 class="info-text w5">0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br></h1>
+                    <h1 class="info-text w6">0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br></h1>
+                </div>
+            </div>
+            <div class="table-part">
+                <div class="info-table-container inf-bor">
+                    <div class="div-fix">
+                        <h1 class="info-text w1">№</h1>
+                        <h1 class="info-text w2">TEAM NAME</h1>
+                    </div>
+                    <h1 class="info-text w3">WWCD</h1>
+                    <h1 class="info-text w4">PP</h1>
+                    <h1 class="info-text w5">PP</h1>
+                    <h1 class="info-text w6">TOTAL</h1>
+                </div>
+                <div class="info-table-container">
+                    <div class="div-fix">
+                        <h1 class="info-text w1">9<br>10<br>11<br>12<br>13<br>14<br>15<br>16<br></h1>
+                        <h1 class="info-text w2">TEAM NAME<br>TEAM NAME<br>TEAM NAME<br>TEAM NAME<br>TEAM NAME<br>TEAM NAME<br>TEAM NAME<br>TEAM NAME<br></h1>
+                    </div>
+                    <h1 class="info-text w3">0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br></h1>
+                    <h1 class="info-text w4">0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br></h1>
+                    <h1 class="info-text w5">0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br></h1>
+                    <h1 class="info-text w6">0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br></h1>
+                </div>
+            </div>
+        </div>
+    </span>
+    <input type="button" id="btnSave" value="Скачать"/>
+    <div id="info"></div>
+    <div id="img-out"></div>
+    <script>
+        document.getElementById("btnSave").addEventListener("click", function() {
+            //Код для сохранения фрагмента HTML-страницы в виде изображения 
+            html2canvas(document.querySelector("#widget")).then(canvas => { 
+                var link = document.createElement("a");
+                document.body.appendChild(link);
+                link.download = "filename.png";
+                link.href = canvas.toDataURL();
+                link.target = '_blank';
+                link.click(); 
+            }); 
+        });
+    </script>
+    <script src="js/app.js"></script>
+
+</body>
+</html>
